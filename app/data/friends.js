@@ -1,6 +1,6 @@
 var friendsTable = [{
         "friendName": "Percy",
-        "photolink": "../images/percy.jpg",
+        "photolink": "https://photos.app.goo.gl/WK2DiHoVPW9MHdGq7",
         "scores": [
             2,
             5,
@@ -10,29 +10,13 @@ var friendsTable = [{
             2,
             5,
             2,
-            5,
-            5
-        ]
-    },
-    {
-        "friendName": "Joe",
-        "photolink": "../images/percy.jpg",
-        "scores": [
-            5,
-            5,
-            5,
-            5,
-            5,
-            5,
-            5,
-            4,
             5,
             5
         ]
     },
     {
         "friendName": "Cat",
-        "photolink": "../images/percy.jpg",
+        "photolink": "https://images.pexels.com/photos/617278/pexels-photo-617278.jpeg?auto=compress&cs=tinysrgb&h=350",
         "scores": [
             1,
             1,

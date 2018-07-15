@@ -7,12 +7,18 @@
     <title>Page Title</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- Latest compiled and minified CSS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Smlep5jCw/wG7hdkwQ/Z5nLIefveQRIY9nfy6xoR1uRYBtpZgI6339F5dgvm/e9B"
+        crossorigin="anonymous">
+
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/chosen/1.8.7/chosen.css" />
     <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
         crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/js/bootstrap.min.js" integrity="sha384-o+RDsa0aLu++PJvFqy8fFScvbHFLtbvScb8AjopnFD+iEQ7wo/CG0xlczd+2O/em"
+        crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/chosen/1.8.7/chosen.jquery.min.js"></script>
+    <link rel="stylesheet" type="text/css" media="screen" href="/css" />
+
 </head>
 
 <body>
@@ -34,7 +40,7 @@
 
         <form class="mainForm">
 
-            <div class="form-row align-items-center q1">
+            <div class="qDiv q1">
                 <div class="col-auto my-1">
                     <h2 class="question_Heading"></h2>
                     <label class="mr-sm-2 askQ" for="inlineFormCustomSelect">Your mind is always buzzing with unexplored ideas and plans.</label>
@@ -49,7 +55,7 @@
                 </div>
             </div>
 
-            <div class="form-row align-items-center q2">
+            <div class="qDiv q2">
                 <div class="col-auto my-1">
                     <h2 class="question_Heading"></h2>
                     <label class="mr-sm-2 askQ" for="inlineFormCustomSelect">Your mind is always buzzing with unexplored ideas and plans.</label>
@@ -64,7 +70,7 @@
                 </div>
             </div>
 
-            <div class="form-row align-items-center q3">
+            <div class="qDiv q3">
                 <div class="col-auto my-1">
                     <h2 class="question_Heading"></h2>
                     <label class="mr-sm-2 askQ" for="inlineFormCustomSelect">Your mind is always buzzing with unexplored ideas and plans.</label>
@@ -79,7 +85,7 @@
                 </div>
             </div>
 
-            <div class="form-row align-items-center q4">
+            <div class="qDiv q4">
                 <div class="col-auto my-1">
                     <h2 class="question_Heading"></h2>
                     <label class="mr-sm-2 askQ" for="inlineFormCustomSelect">Your mind is always buzzing with unexplored ideas and plans.</label>
@@ -94,7 +100,7 @@
                 </div>
             </div>
 
-            <div class="form-row align-items-center q5">
+            <div class="qDiv q5">
                 <div class="col-auto my-1">
                     <h2 class="question_Heading"></h2>
                     <label class="mr-sm-2 askQ" for="inlineFormCustomSelect">Your mind is always buzzing with unexplored ideas and plans.</label>
@@ -109,7 +115,7 @@
                 </div>
             </div>
 
-            <div class="form-row align-items-center q6">
+            <div class="qDiv q6">
                 <div class="col-auto my-1">
                     <h2 class="question_Heading"></h2>
                     <label class="mr-sm-2 askQ" for="inlineFormCustomSelect">Your mind is always buzzing with unexplored ideas and plans.</label>
@@ -124,7 +130,7 @@
                 </div>
             </div>
 
-            <div class="form-row align-items-center q7">
+            <div class="qDiv q7">
                 <div class="col-auto my-1">
                     <h2 class="question_Heading"></h2>
                     <label class="mr-sm-2 askQ" for="inlineFormCustomSelect">Your mind is always buzzing with unexplored ideas and plans.</label>
@@ -139,7 +145,7 @@
                 </div>
             </div>
 
-            <div class="form-row align-items-center q8">
+            <div class="fqDiv q8">
                 <div class="col-auto my-1">
                     <h2 class="question_Heading"></h2>
                     <label class="mr-sm-2 askQ" for="inlineFormCustomSelect">Your mind is always buzzing with unexplored ideas and plans.</label>
@@ -154,7 +160,7 @@
                 </div>
             </div>
 
-            <div class="form-row align-items-center q9">
+            <div class="qDiv q9">
                 <div class="col-auto my-1">
                     <h2 class="question_Heading"></h2>
                     <label class="mr-sm-2 askQ" for="inlineFormCustomSelect">Your mind is always buzzing with unexplored ideas and plans.</label>
@@ -169,7 +175,7 @@
                 </div>
             </div>
 
-            <div class="form-row align-items-center q10">
+            <div class="qDiv q10">
                 <div class="col-auto my-1">
                     <h2 class="question_Heading"></h2>
                     <label class="mr-sm-2 askQ" for="inlineFormCustomSelect">Your mind is always buzzing with unexplored ideas and plans.</label>
@@ -186,8 +192,35 @@
             <button type="submit" class="btn btn-primary mb-2 submitBtn">Submit</button>
         </form>
 
+
+        <div class="modal fade bs-example-modal-lg" id="matchModal" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel">
+            <div class="modal-dialog modal-lg" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title"></h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
     </div>
 
+    <hr>
+    <footer class="footer">
+        <div class="container">
+            <p>
+                <a href="/api/friends">API Friends table link</a> |
+                <a href="https://github.com/max77p/FriendFinder">GitHub Repo</a>
+            </p>
+        </div>
+    </footer>
 
     <script type="text/javascript">
         var questions = {
@@ -219,42 +252,46 @@
             y[i].innerHTML = questions[qobj[i]];
             x[i].innerHTML = "Question " + (i + 1);
         }
-        // for (var i = 0; i < qobj.length; i++) {
 
-        // }
         var slcted = document.getElementsByTagName('select');
         // console.log(slcted.length);
         var count = 0;
-
-
-        // $('select').on('change', function () {
-        //     if ($(this).val() != null) {
-        //         count++;
-        //     }
-        // });
         var optionVal = [];
+        var empty_select;
         $('.submitBtn').on("click", function (e) {
             e.preventDefault();
-            var empty_select = false;
+            // console.log("teststst");
+            console.log(empty_select);
             $('select option:selected').each(function () {
-                if ($(this).val() == null) {
-
+                if ($(this).val() == '') {
                     empty_select = true;
+                }
+                else{
+                    empty_select=false;
                 }
             });
 
             if (empty_select) {
                 console.log("Sorry please make sure all fields are filled up!");
+                return;
             } else {
+                // console.log(empty_select);
                 console.log("Done!");
+                $('select option:selected').each(function () {
+                    optionVal.push(parseInt($(this).val()));
+                });
+                // $(".my_select_box").val($('.my_select_box').data('placeholder')).trigger("chosen:updated");
+                $(".my_select_box").val("").trigger("chosen:updated");
                 postit();
+                $('.modal-body').empty();
+                $(".name").val("");
+                $(".photolink").val("");
+                optionVal = [];
+                count = 0;
             }
         });
 
         function postit() {
-            $('select option:selected').each(function () {
-                optionVal.push(parseInt($(this).val()));
-            });
             var newfriends = {
                 friendName: $(".name").val().trim(),
                 photolink: $(".photolink").val().trim(),
@@ -264,34 +301,23 @@
                 function (data) {
                     console.log(data);
                     if (data) {
-                        alert("Welcome to Tinder 2.0");
+                        // alert("Welcome to Tinder 2.0");
                         // console.log(data);
-                        console.log(data.friendName);
-                        count = 0;
-                        optionVal = [];
+                        $('.modal-title').text("You matched with: " + data.friendName);
+                        var img = $('<img id="dynamicImg">');
+                        img.attr('src', data.photolink);
+                        img.appendTo('#dynamicImg');
+                        $('.modal-body').append(img);
+                        $('#matchModal').modal('toggle');
 
                     } else {
                         alert("Sorry please make sure all fields are filled up");
                     }
-                    $(".name").val("");
-                    $(".photolink").val("");
-                    $(".my_select_box").val($('.my_select_box').data('placeholder')).trigger(
-                        "chosen:updated");
+
                 }
             );
+
         };
-
-
-
-
-
-
-
-
-
-
-
-        // console.log(optionVal);
     </script>
 </body>
 
