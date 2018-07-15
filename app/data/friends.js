@@ -1,6 +1,6 @@
 var friendsTable = [{
         "friendName": "Percy",
-        "photolink": "https://imgur.com/a/WjzRPQm",
+        "photolink": "https://i.imgur.com/bDvIsIa.jpg",
         "scores": [
             2,
             5,
