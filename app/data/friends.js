@@ -3,15 +3,15 @@ var friendsTable = [{
         "photolink": "https://i.imgur.com/bDvIsIa.jpg",
         "scores": [
             2,
-            5,
+            1,
             2,
             2,
-            5,
             2,
-            5,
             2,
-            5,
-            5
+            2,
+            2,
+            2,
+            2
         ]
     },
     {
