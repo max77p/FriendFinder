@@ -51,7 +51,8 @@ module.exports = function (app) {
                 }
                 console.log("ikdx is "+x);
                 tempDiff.push({'idx':x,'value':Math.abs(totalDiff)});
-                // console.log(tempDiff);
+                totalDiff=0;
+                console.log(tempDiff);
                 // console.log(tableData.length-1);
                 // console.log(tempDiff.length);
             }
@@ -62,9 +63,9 @@ module.exports = function (app) {
                 checkDiff.push(tempDiff[ele].value);
             }
             var lowest=Math.min(...checkDiff);
-            // console.log(lowest);
+            console.log(lowest);
             var findidx=tempDiff.map(obj => obj.value).indexOf(lowest);
-            // console.log(findidx);
+            console.log(findidx);
             // tempDiff=[];
             // checkDiff=[];
             // totalDiff=0;//reset this so itiration does not accumulate
