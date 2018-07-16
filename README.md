@@ -17,3 +17,5 @@ With that done, the app will compare the difference between current user's score
 
 * The closest match will be the user with the least amount of difference.
 * Once a match has been found, a modal will appear displaying the name and photo of the user
+
+See the working app on Heroku [Tinder Lite](https://ff-tinderlite.herokuapp.com/)
