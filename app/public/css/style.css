@@ -14,3 +14,8 @@
  .tinderIcon{
      color:red;
  }
+
+ #dynamicImg{
+    width: 100%;
+    height: 50em;
+ }
